@@ -18,8 +18,10 @@ func bubblingSort(a []int) {
 	if a == nil || len(a) < 2 {
 		return
 	}
+	// 比较的轮次
 	for i := 0; i < len(a)-1; i++ {
-		for j := 0; j < len(a)-1-i; j++ { // 两两排序
+		// 两两比较
+		for j := 0; j < len(a)-1-i; j++ {
 			if a[j] > a[j+1] {
 				a[j], a[j+1] = a[j+1], a[j]
 			}
