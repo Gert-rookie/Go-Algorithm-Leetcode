@@ -7,7 +7,7 @@ import "fmt"
 */
 func main() {
 	var a = []int{12, 20, 5, 16, 15, 1, 30, 45, 23, 9}
-	bubblingSort(a)
+	fastSort(a)
 	fmt.Println(a)
 }
 
