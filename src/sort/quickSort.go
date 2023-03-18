@@ -21,6 +21,7 @@ func quickSort(a []int, left, right int) {
 }
 
 func partition(a []int, left, right int) int {
+	// 选取基准
 	pivot := left
 	index := left + 1
 	for i := index; i <= right; i++ {
@@ -29,6 +30,7 @@ func partition(a []int, left, right int) int {
 			index++
 		}
 	}
+	// 替换基准
 	a[pivot], a[index-1] = a[index-1], a[pivot]
 	return index - 1
 }
